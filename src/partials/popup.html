@@ -1,0 +1,36 @@
+<!-- <button class="popup__open">POPUP</button> -->
+
+<div class="popup">
+  <div class="popup__content text-center">
+    <button type="button" class="popup__close"><strong>&times;</strong></button>
+    <form class="popup__form popup-form">
+      <h2 class="popup-form__title">
+        Введите ваши данные <br />и нажмите заказать звонок
+      </h2>
+      <input
+        id="modal-name"
+        class="popup-form__input"
+        name="user_name"
+        required
+        type="text"
+        placeholder="Введите ваше имя"
+      />
+      <input
+        id="modal-phone"
+        class="popup-form__input"
+        name="user_phone"
+        required
+        type="tel"
+        placeholder="Введите телефон"
+        data-mask="+7 (000) 000-00-00"
+      />
+      <button
+        class="text-uppercase btn-block popup-form__btn modal-call"
+        name="submit"
+      >
+        Заказать звонок
+      </button>
+      <p class="popup-form__notice">Перезвоним в течение 10 минут</p>
+    </form>
+  </div>
+</div>
